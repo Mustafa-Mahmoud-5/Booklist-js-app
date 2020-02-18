@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List App</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/booklist.css">   
+</head>
+<body>
+
+
+
+
+    
+    <div class="container my-5">
+
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List
+        </h1>
+
+        <div id="alertMessage" style="font-size: 20px;">
+            
+        </div>
+        <form id = "book-form">
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">Isbn#</label>
+                <input type="text" id="isbn" class="form-control" placeholder="The isbn should be unique for each book...">
+            </div>
+
+            <input type="submit" class="btn btn-block btn-primary" id = "submitBtn" value="Add Book">
+        </form>
+
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Isbn#</th>
+                    <th></th>   <!-- for the delete button -->
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+
+
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/booklist.js"></script>
+</body>
+</html>
